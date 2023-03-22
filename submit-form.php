@@ -10,8 +10,13 @@ $body = "<h2>New form submission</h2>";
 $body .= "<p><strong>Name:</strong> ".$name."</p>";
 $body .= "<p><strong>Email:</strong> ".$email."</p>";
 $body .= "<p><strong>Message:</strong><br>".$message."</p>";
-if(mail($to, $subject, $body, $headers)) {
-  echo "Thank you for your message!";
-} else {
-  echo "There was a problem sending your message. Please try again later.";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if(mail($to, $subject, $body, $headers)) {
+    echo "Thank you for your message!";
+    } else {
+    echo "There was a problem sending your message. Please try again later.";
+    }
+}
+else{
+    echo "problem"
 }
