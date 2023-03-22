@@ -56,3 +56,10 @@ body {
   input[type="submit"]:hover {
 	background-color: #3e8e41;
   }
+h1 {
+	color:maroon;
+	font-size: 72px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
