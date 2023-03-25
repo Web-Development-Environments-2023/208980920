@@ -131,3 +131,6 @@ h1 {
   .photo:hover::before {
 	opacity: 1;
   }
+fb-like{
+	size: bigger
+}
