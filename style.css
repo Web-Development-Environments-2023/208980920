@@ -13,6 +13,7 @@ nav {
   max-width: 1200px;
   justify-content: center;
   width: 100%;
+	margin: 0 auto; 
 }
 
 nav ul {
