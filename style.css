@@ -5,6 +5,13 @@
 	height: 70;
 	background-color: transparent;
 }
+li {
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
 body {
 	background-color: #EDF1FF;
 	font-size: larger;
